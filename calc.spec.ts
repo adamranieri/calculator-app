@@ -1,4 +1,4 @@
-import { add, subtract } from "./calc-functions"
+import { add, multiply, subtract } from "./calc-functions"
 
 describe("Calculator Tests", ()=>{
 
@@ -10,5 +10,10 @@ describe("Calculator Tests", ()=>{
     it("Should subtract 4-2", ()=>{
         const diff = subtract(4,2)
         expect(diff).toBe(2);
+    })
+
+    it("Should multiply 5 by 5", ()=>{
+        const product = multiply(5,5);
+        expect(product).toBe(25);
     })
 })
